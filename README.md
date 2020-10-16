@@ -1,4 +1,4 @@
-# Deep Learning Course - 2020 practicals
+# UvA Deep Learning Course - Practicals
 ## Oct - Dec 2020
 ### Practical 1
 #### Deadline: TODO
