@@ -1,4 +1,5 @@
-# Deep Learning Course - Fall 2020 practicals
+# Deep Learning Course - 2020 practicals
+## Oct - Dec 2020
 ### Practical 1
 #### Deadline: TODO
 ### Practical 2
