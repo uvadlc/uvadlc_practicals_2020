@@ -15,11 +15,11 @@ class MLP(object):
     It handles the different layers and parameters of the model.
     Once initialized an MLP object can perform forward and backward.
     """
-    
-    def __init__(self, n_inputs, n_hidden, n_classes, neg_slope):
+
+    def __init__(self, n_inputs, n_hidden, n_classes):
         """
         Initializes MLP object.
-        
+
         Args:
           n_inputs: number of inputs.
           n_hidden: list of ints, specifies the number of units
@@ -29,12 +29,11 @@ class MLP(object):
           n_classes: number of classes of the classification problem.
                      This number is required in order to specify the
                      output dimensions of the MLP
-          neg_slope: negative slope parameter for LeakyReLU
-        
+
         TODO:
         Implement initialization of the network.
         """
-        
+
         ########################
         # PUT YOUR CODE HERE  #
         #######################
@@ -42,21 +41,21 @@ class MLP(object):
         ########################
         # END OF YOUR CODE    #
         #######################
-    
+
     def forward(self, x):
         """
         Performs forward pass of the input. Here an input tensor x is transformed through
         several layer transformations.
-        
+
         Args:
           x: input to the network
         Returns:
           out: outputs of the network
-        
+
         TODO:
         Implement forward pass of the network.
         """
-        
+
         ########################
         # PUT YOUR CODE HERE  #
         #######################
@@ -64,20 +63,20 @@ class MLP(object):
         ########################
         # END OF YOUR CODE    #
         #######################
-        
+
         return out
-    
+
     def backward(self, dout):
         """
         Performs backward pass given the gradients of the loss.
-    
+
         Args:
           dout: gradients of the loss
-        
+
         TODO:
         Implement backward pass of the network.
         """
-        
+
         ########################
         # PUT YOUR CODE HERE  #
         #######################
@@ -85,5 +84,5 @@ class MLP(object):
         ########################
         # END OF YOUR CODE    #
         #######################
-        
+
         return
