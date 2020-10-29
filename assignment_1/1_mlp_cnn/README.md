@@ -12,8 +12,8 @@
 
 - add the following lines in your ".bashrc":
 ```
-module load 2020
-module load Miniconda3/4.7.12.1
+module load 2019
+module load Miniconda3/4.7.10
 ```
 
 - logout and login again
