@@ -21,7 +21,7 @@ LEARNING_RATE_DEFAULT = 1e-3
 MAX_STEPS_DEFAULT = 1400
 BATCH_SIZE_DEFAULT = 200
 EVAL_FREQ_DEFAULT = 100
-NEG_SLOPE_DEFAULT = 0.02
+
 
 # Directory in which cifar data is saved
 DATA_DIR_DEFAULT = './cifar10/cifar-10-batches-py'
