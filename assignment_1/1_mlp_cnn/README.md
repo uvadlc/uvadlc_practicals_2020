@@ -38,3 +38,7 @@ https://docs.conda.io/projects/conda/en/latest/
 https://docs.conda.io/en/latest/miniconda.html
 https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-html.environments
 
+
+### Assignment update on 02.11.2020:
+Correction in Figure 1 and clarification of Question 4 a).
+
