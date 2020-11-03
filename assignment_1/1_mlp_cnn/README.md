@@ -40,5 +40,5 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-html.envi
 
 
 ### Assignment update on 02.11.2020:
-Correction in Figure 1 and clarification of Question 4 a).
+Correction in Figure 1 and clarification of Question 4 a), moved ELU description to Question 1.2.
 
