@@ -28,8 +28,8 @@ import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader
 
-from part2.dataset import TextDataset
-from part2.model import TextGenerationModel
+from dataset import TextDataset
+from model import TextGenerationModel
 
 ###############################################################################
 
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     parser.add_argument('--dropout_keep_prob', type=float, default=1.0,
                         help='Dropout keep probability')
 
-    parser.add_argument('--train_steps', type=int, default=1e6,
+    parser.add_argument('--train_steps', type=int, default=int(1e6),
                         help='Number of training steps')
     parser.add_argument('--max_norm', type=float, default=5.0, help='--')
 
@@ -133,6 +133,8 @@ if __name__ == "__main__":
                         help='How often to print training progress')
     parser.add_argument('--sample_every', type=int, default=100,
                         help='How often to sample from the model')
+    parser.add_argument('--device', type=str, default=("cpu" if not torch.cuda.is_available() else "cuda"),
+                        help="Device to run the model on.")
 
     # If needed/wanted, feel free to add more arguments
 
