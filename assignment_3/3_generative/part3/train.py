@@ -174,7 +174,7 @@ if __name__ == "__main__":
     parser.add_argument('--seed', default=42, type=int,
                         help='Seed to use for reproducing results')
     parser.add_argument('--log_dir', default='NF_logs/', type=str,
-                        help='Directory where the PyTorch Lightning logs ' +
+                        help='Directory where the tensorboard logs ' +
                              'should be created.')
     parser.add_argument('--progress_bar', action='store_true',
                         help=('Use a progress bar indicator for interactive experimentation. '
