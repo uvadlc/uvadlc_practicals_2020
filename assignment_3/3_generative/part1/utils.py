@@ -59,7 +59,7 @@ def elbo_to_bpd(elbo, img_shape):
     Converts the summed negative log likelihood given by the ELBO into the bits per dimension score.
     Inputs:
         elbo - Tensor of shape [batch_size]
-        img_shape - Shape of the input images.
+        img_shape - Shape of the input images, representing [batch, channels, height, width]
     Outputs:
         bpd - The negative log likelihood in bits per dimension for the given image.
     """
