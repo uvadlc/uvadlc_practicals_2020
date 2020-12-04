@@ -29,7 +29,7 @@ class CNNEncoder(nn.Module):
                                  MNIST, this parameter is 1
             num_filters - Number of channels we use in the first convolutional
                           layers. Deeper layers might use a duplicate of it.
-            latent_dim - Dimensionality of latent representation z
+            z_dim - Dimensionality of latent representation z
         """
         super().__init__()
 
@@ -60,11 +60,11 @@ class CNNDecoder(nn.Module):
         """Decoder with a CNN network.
 
         Inputs:
-            - num_input_channels: Number of channels of the image to
-                                  reconstruct. For MNIST, this parameter is 3
-            - num_filters: Number of filters we use in the last convolutional
-                           layers. Early layers might use a duplicate of it.
-            - latent_dim: Dimensionality of latent representation z
+            num_input_channels- Number of channels of the image to
+                                reconstruct. For MNIST, this parameter is 3
+            num_filters - Number of filters we use in the last convolutional
+                          layers. Early layers might use a duplicate of it.
+            z_dim - Dimensionality of latent representation z
         """
         super().__init__()
 

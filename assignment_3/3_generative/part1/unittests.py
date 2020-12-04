@@ -117,7 +117,7 @@ class TestMLPEncoderDecoder(unittest.TestCase):
         means = torch.cat(all_means, dim=0)
         log_std = torch.cat(all_log_std, dim=0)
         self.assertTrue((means > 0).any() and (means < 0).any(), msg="Only positive or only negative means detected. Are you sure this is what you want?")
-        self.assertTrue((log_std > 0).any() and (log_std < 0).any(), msg="Only positive or only negative means detected. Are you sure this is what you want?")
+        self.assertTrue((log_std > 0).any() and (log_std < 0).any(), msg="Only positive or only negative log-stds detected. Are you sure this is what you want?")
 
     @torch.no_grad()
     def test_decoder(self):
@@ -164,7 +164,7 @@ class TestCNNEncoderDecoder(unittest.TestCase):
             means = torch.cat(all_means, dim=0)
             log_std = torch.cat(all_log_std, dim=0)
             self.assertTrue((means > 0).any() and (means < 0).any(), msg="Only positive or only negative means detected. Are you sure this is what you want?")
-            self.assertTrue((log_std > 0).any() and (log_std < 0).any(), msg="Only positive or only negative means detected. Are you sure this is what you want?")
+            self.assertTrue((log_std > 0).any() and (log_std < 0).any(), msg="Only positive or only negative log-stds detected. Are you sure this is what you want?")
 
     @torch.no_grad()
     def test_decoder(self):
