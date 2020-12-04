@@ -24,7 +24,7 @@ class NormalizingFlow(nn.Module):
         """
         super().__init__()
 
-        # Create checkerboard mask
+        # Create mask
         mask = torch.tensor([1, 0], dtype=torch.bool).repeat(dim // 2)
 
         self.dim = dim
