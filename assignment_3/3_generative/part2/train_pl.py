@@ -338,7 +338,7 @@ if __name__ == '__main__':
     parser.add_argument('--lr', default=2e-4, type=float,
                         help='Learning rate to use')
     parser.add_argument('--batch_size', default=128, type=int,
-                        help='Seed to use for reproducing results')
+                        help='Batch size to use for training')
 
     # Other hyperparameters
     parser.add_argument('--epochs', default=250, type=int,
