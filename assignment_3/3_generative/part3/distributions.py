@@ -32,11 +32,12 @@ class BimodalGaussianDiag:
     sample from the distribution.
 
     Inputs:
-        mu (list)    - List of tensors of shape of 1xdims. These are
-                       the mean values of the distribution for each
-                       random variable.
-        sigma (list) - List of tensors of shape 1xdims. These are the
-                       values of standard devations of each random variable.
+        mu (list)    - List of tensors of length 2. Each element in the list
+                       is of shape of 1xdims. These are the mean values of a
+                       distribution for each random variable.
+        sigma (list) - List of tensors of length 2. Each element in the list is
+                       of shape 1xdims. These are the values of standard
+                       devations of a distribution for each random variable.
         dims(int)    - Dimensionality of random vector.
     """
     def __init__(self, mu, sigma, dims):
@@ -68,11 +69,11 @@ class MultivariateGaussianDiag:
     sample from the distribution.
 
     Inputs:
-        mu (list)    - List of tensors of shape of 1xdims. These are
-                       the mean values of the distribution for each
-                       random variable.
-        sigma (list) - List of tensors of shape 1xdims. These are the
-                       values of standard devations of each random variable.
+        mu (tensor)    - Tensor of shape of 1xdims. These are
+                         the mean values of the distribution for each
+                         random variable.
+        sigma (tensor) - Tensor of shape 1xdims. These are the
+                         values of standard devations of each random variable.
         dims(int)    - Dimensionality of random vector.
     """
     def __init__(self, mu, sigma, dims):
