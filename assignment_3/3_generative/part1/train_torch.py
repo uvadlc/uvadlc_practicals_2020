@@ -252,9 +252,9 @@ def main(args):
     # Test epoch
     test_loader = (tqdm(test_loader, desc="Testing", leave=False)
                    if args.progress_bar else test_loader)
-    _, _, test_bpd = test_vae(model, test_loader)
+    test_bpd, _, _ = test_vae(model, test_loader)
     print(f"Test BPD: {test_bpd}")
-    summary_writer.add_scalars("BPD", {"test": test_bpd}, args.epochs - 1)
+    summary_writer.add_scalars("BPD", {"test": test_bpd}, best_epoch_idx)
 
     # Manifold generation
     if args.z_dim == 2:
