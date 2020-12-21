@@ -10,5 +10,6 @@ When you submit your code, make sure to use the same structure as we provide in 
         - Section 1.3: Kullback-Leibner --> Kullback-Leibler <br />
         - Section 1.5: Mapping of Sigma and Mu below equation 16. Has to be from M --> D. <br />
 - 8 Dec: Updated docstring Assignment 3 distributions.py.<br />
+- 21 Dec: Part 3: Fix extent argument in utils.py plot_contours <br/>
 
   
