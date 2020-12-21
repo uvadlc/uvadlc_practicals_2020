@@ -54,7 +54,7 @@ class NormalizingFlow(nn.Module):
 
     def transform(self, z, inverse=False):
         """
-        Function for transforming z to x, or x to z (if inverse True).
+        Function for transforming x to z, or z to x (if inverse True).
 
         Inputs:
             z       - Data points to transform. Shape: [batch_size, dim]

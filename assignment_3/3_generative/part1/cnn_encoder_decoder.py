@@ -34,7 +34,7 @@ class CNNEncoder(nn.Module):
         super().__init__()
 
         # For an intial architecture, you can use the encoder of Tutorial 9.
-        # Feel free to experiment with the architecture yourself, but the one specified here is 
+        # Feel free to experiment with the architecture yourself, but the one specified here is
         # sufficient for the assignment.
         raise NotImplementedError
 
@@ -61,7 +61,7 @@ class CNNDecoder(nn.Module):
 
         Inputs:
             num_input_channels- Number of channels of the image to
-                                reconstruct. For MNIST, this parameter is 3
+                                reconstruct. For MNIST, this parameter is 1
             num_filters - Number of filters we use in the last convolutional
                           layers. Early layers might use a duplicate of it.
             z_dim - Dimensionality of latent representation z
@@ -69,7 +69,7 @@ class CNNDecoder(nn.Module):
         super().__init__()
 
         # For an intial architecture, you can use the decoder of Tutorial 9.
-        # Feel free to experiment with the architecture yourself, but the one specified here is 
+        # Feel free to experiment with the architecture yourself, but the one specified here is
         # sufficient for the assignment.
         raise NotImplementedError
 

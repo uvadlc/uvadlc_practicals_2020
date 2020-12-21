@@ -157,7 +157,7 @@ class GAN(pl.LightningModule):
             loss - The loss for the discriminator to optimize
         """
 
-        # Remark: there are more metrics that you can add. 
+        # Remark: there are more metrics that you can add.
         # For instance, how about the accuracy of the discriminator?
         loss = None
         self.log("generator/loss", loss)
@@ -176,7 +176,7 @@ class GenerateCallback(pl.Callback):
             batch_size     - Number of images to generate
             every_n_epochs - Only save images every N epochs (o.w. tensorboard
                              overhead gets quite large)
-            save_to_disk   - If True, the sample and image means should be
+            save_to_disk   - If True, the sample should be
                               saved to disk as well.
         """
         super().__init__()
@@ -225,7 +225,7 @@ class InterpolationCallback(pl.Callback):
                                   between the two random images.
             every_n_epochs      - Only save those images every N epochs
                                    (otherwise tensorboard gets quite large)
-            save_to_disk        - If True, the samples and image means should
+            save_to_disk        - If True, the samples should
                                   be saved to disk as well.
         """
         super().__init__()
@@ -245,7 +245,7 @@ class InterpolationCallback(pl.Callback):
     def sample_and_save(self, trainer, pl_module, epoch):
         """
         Function that generates and save the interpolations from the GAN.
-        The generated samples and mean images should be added to TensorBoard and,
+        The generated samples images should be added to TensorBoard and,
         if self.save_to_disk is True, saved inside the logging directory.
         Inputs:
             trainer     - The PyTorch Lightning "Trainer" object.
@@ -259,8 +259,8 @@ class InterpolationCallback(pl.Callback):
         # - Use the torchvision function "make_grid" to create a grid of multiple images
         # - Use the torchvision function "save_image" to save an image grid to disk
 
-        # You also have to implement this function in a later question of the assignemnt. 
-        # By default it is skipped to allow you to test your other code so far. 
+        # You also have to implement this function in a later question of the assignemnt.
+        # By default it is skipped to allow you to test your other code so far.
         print("WARNING: Interpolation function has not been implemented yet.")
         pass
 
@@ -319,12 +319,12 @@ if __name__ == '__main__':
     # Model hyperparameters
     parser.add_argument('--z_dim', default=32, type=int,
                         help='Dimensionality of latent space')
-    parser.add_argument('--hidden_dims_gen', default=[128, 256, 512], 
+    parser.add_argument('--hidden_dims_gen', default=[128, 256, 512],
                         type=int, nargs='+',
                         help='Hidden dimensionalities to use inside the ' + \
                              'generator. To specify multiple, use " " to ' + \
                              'separate them. Example: \"128 256 512\"')
-    parser.add_argument('--hidden_dims_disc', default=[512, 256], 
+    parser.add_argument('--hidden_dims_disc', default=[512, 256],
                         type=int, nargs='+',
                         help='Hidden dimensionalities to use inside the ' + \
                              'discriminator. To specify multiple, use " " to ' + \
