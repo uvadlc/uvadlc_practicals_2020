@@ -18,7 +18,7 @@ def make_mesh():
     return z1, z2, z
 
 
-def plot_contours(p_z, extent=(-2.5, 2.5, 2.5, -2.5)):
+def plot_contours(p_z, extent=(-2.5, 2.5, -2.5, 2.5)):
     cs = plt.contourf(p_z, extent=extent, cmap='Blues')
     cs.changed()
 
